@@ -4,8 +4,8 @@ This is a MongoDB query parser that converts human-readable search strings into 
 
 ## Features
 
-- Parse human-friendly search expressions into MongoDB queries
-- Supports logical operators, grouping, comparison, regex, arrays, dates, booleans, and nulls
+- Parses human-friendly search expressions into MongoDB queries
+- Supports logical operators, grouping, comparisons, regex, arrays, dates, booleans, and nulls
 - Handles nested and complex expressions
 
 ## Installation
@@ -17,7 +17,7 @@ npm install humanquery-mongo
 ## Usage
 
 ```js
-import convert from 'humanquery-mongo';
+import convert from "humanquery-mongo";
 // or: const convert = require('humanquery-mongo');
 
 const str = `n > 0 & (b = true | r ~ 'hello.*' | t != "text") & d = now-1d`;
